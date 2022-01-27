@@ -1,0 +1,50 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="calcmvp.css"/>
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+    
+    <script type="text/javascript" src="createTeamBlock.js" ></script>
+    <script type="text/javascript" src="loadStoredTeams.js" ></script>
+
+    <script type="text/javascript" src="teamInitializer.js" ></script>
+    <script type="text/javascript" src="parsePokePaste.js" ></script>
+    <script type="text/javascript" src="parseTextTeam.js" ></script>
+    <script type="text/javascript" src="convertTeamArray.js" ></script>
+    <script type="text/javascript" src="convertPokemon.js" ></script>
+    <script type="text/javascript" src="saveTeam.js" ></script>
+    <script type="text/javascript" src="addTeam.js" ></script>
+
+    <script type="text/javascript" src="startMatch.js" ></script>
+
+    <script type="text/javascript" src="teaminput.js" ></script>
+</head>
+<body>
+    <div id="banner">
+        <img src="content/nuzlogo.png" id="logo"/>
+        <a href="calcmvp.html" class="button" id="start-match">Start Match</a>
+    </div>
+    <div id="content-flex">
+        <div class="flex-spacer"></div>
+        <div id="teams-holder">
+            <button id="new-team">+</button>
+        </div>
+        <div id="update-interface">
+            <button id="team-return">Back to Teams</button>
+            <button id="add-team">Add Team</button>
+            <div id="paste-box">
+                <label for="pokepaste-input" >PokePaste:</label>
+                <input name="pokepaste-input" id="pokepaste-input" type="text"></input>
+            </div>
+            <div id="link-box">
+                <label for="raw-text-input" >Text:</label>
+                <textarea name="raw-text-input" id="raw-text-input"></textarea>
+            </div>
+        </div>
+        <div class="flex-spacer"></div>
+    </div>
+</body>

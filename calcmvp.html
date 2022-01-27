@@ -1,0 +1,75 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="calcmvp.css"/>
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="basestats.js"></script>
+    <script type="text/javascript" src="moves.js"></script>
+    <script type="text/javascript" src="userteam.js"></script>
+    <script type="text/javascript" src="sets.js"></script>
+    <script type="text/javascript" src="typematchups.js"></script>
+    <script type="text/javascript" src="natures.js"></script>
+    <script type="text/javascript" src="pokemonNames.js"></script>
+
+    <script type="text/javascript" src="variableInitializer.js"></script>
+    <script type="text/javascript" src="getUserSets.js"></script>
+    <script type="text/javascript" src="calculatePokemonFromSets.js"></script>
+    <script type="text/javascript" src="displayUserTeam.js"></script>
+    <script type="text/javascript" src="clearRow.js"></script>
+    <script type="text/javascript" src="getEnemySets.js"></script>
+    <script type="text/javascript" src="favourabilityDetails.js"></script>
+    <script type="text/javascript" src="singleRoll.js"></script>
+    <script type="text/javascript" src="setFavourability.js"></script>
+    <script type="text/javascript" src="calculateMatchUp.js"></script>
+    <script type="text/javascript" src="addTable.js"></script>
+    <script type="text/javascript" src="addArrow.js"></script>
+    <script type="text/javascript" src="addDamageRolls.js"></script>
+    <script type="text/javascript" src="enemyRowBuilder.js"></script>
+
+    <script type="text/javascript" src="W3Cautocomplete.js"></script>
+
+    <script type="text/javascript" src="calcmvp.js" ></script>
+</head>
+<body>
+    <div id="banner">
+        <img src="content/nuzlogo.png" id="logo"/>
+        <a href="teaminput.html" class="button" id="start-match">Back to Teams</a>
+    </div>
+    <main>
+        <form id="enemy-inputs" autocomplete="off">
+            <div id="autocomplete-label">
+                <h3>Enemy Pokemon:</h3>
+            </div>
+            <div class="autocomplete">
+              <input id="autocomplete-1" type="text" class="enemy-select">
+            </div>
+            <div class="autocomplete">
+                <input id="autocomplete-2" type="text" class="enemy-select">
+            </div>
+            <div class="autocomplete">
+                <input id="autocomplete-3" type="text" class="enemy-select">
+            </div>
+            <div class="autocomplete">
+                <input id="autocomplete-4" type="text" class="enemy-select">
+            </div>
+            <div class="autocomplete">
+            <input id="autocomplete-5" type="text" class="enemy-select">
+            </div>
+            <div class="autocomplete">
+                <input id="autocomplete-6" type="text" class="enemy-select">
+            </div>
+        </form>
+    
+        <div id="user-team-holder"></div>
+        <div id="row-1"></div>
+        <div id="row-2"></div>
+        <div id="row-3"></div>
+        <div id="row-4"></div>
+        <div id="row-5"></div>
+        <div id="row-6"></div>
+    </main>
+</body>

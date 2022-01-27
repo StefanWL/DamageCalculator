@@ -1,0 +1,386 @@
+body {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    background-color:#fffaf0;
+    margin: 0;
+}
+main{
+    margin: 0.5em;
+}
+#enemy-inputs{
+    margin-bottom: 1em;
+}
+#autocomplete-label{
+    display: inline-block;
+    margin-right: 1em;
+}
+#user-team-holder {
+    display: flex;
+    margin-bottom: 1em;
+}
+.user-team-member {
+    flex: 1 0 0;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.team-text-holder{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    height: 100%;
+}
+.team-sprite{
+    width: 40px;
+}
+.enemy-bar{
+    width: 100%;
+    background-color: #f1f1f1;
+    color: black;
+    font-weight: 700;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease
+}
+.enemy-bar:hover{
+    background-color: #e9e9e9;
+}
+.enemy-sprite{
+    width: 40px;
+}
+.enemy-text-holder{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-left: 2em;
+    padding-bottom: 0.5em;
+    height: 40px;
+}
+.set-bar{
+    display: block;
+    flex: 1 0 100%;
+    height: 20px;
+    background-color: white;
+    color: black;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease
+}
+.set-bar:hover{
+    background-color: #f8f8f8;
+}
+.set-text-holder{
+    margin-left: 2em;
+}
+.bar-close-arrow {
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+}
+.rotate {
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+.rotate-reset {
+    transform: rotate(0deg);
+    transition: .3s;
+}
+.enemy-bar .bar-close-arrow{
+    margin-top: 10px;
+}
+.set-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-col {
+    flex: 1 0 0;
+}
+table {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-spacing: 0;
+}
+th, td {
+    border: 1px solid #ddd;
+}
+th {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+td {
+    font-size: 0.8em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    word-wrap: break-word;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+tr:last-child td{
+    padding-bottom: 1em;
+}
+tr:last-child td:first-child{
+    border-bottom-left-radius: 1em;
+}
+tr:last-child td:last-child{
+    border-bottom-right-radius: 1em;
+}
+.UserFavoured{
+    background-color:rgb(0, 87, 0);
+}
+.Draw{
+    background-color: darkgoldenrod;
+}
+.EnemyFavoured{
+    background-color:maroon;
+}
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+.normal{
+    background-color: #C6C6A7;
+    border: 2px solid #A8A878;
+}
+.fighting{
+    background-color: #D67873;
+    border: 2px solid #C03028;
+}
+.flying{
+    background-color: #C6B7F5;
+    border: 2px solid #A890F0;
+}
+.poison{
+    background-color: #C183C1;
+    border: 2px solid #A040A0;
+}
+.ground{
+    background-color: #EBD69D;
+    border: 2px solid #E0C068;
+}
+.rock{
+    background-color: #D1C17D;
+    border: 2px solid #B8A038;
+}
+.bug{
+    background-color: #C6D16E;
+    border: 2px solid #A8B820;
+}
+.ghost{
+    background-color: #A292BC;
+    border: 2px solid #705898;
+}
+.steel{
+    background-color: #D1D1E0;
+    border: 2px solid #B8B8D0;
+}
+.fire{
+    background-color: #F5AC78;
+    border: 2px solid #F08030;
+}
+.water{
+    background-color: #9DB7F5;
+    border: 2px solid #6890F0;
+}
+.grass{
+    background-color: #A7DB8D;
+    border: 2px solid #78C850;
+}
+.electric{
+    background-color: #FAE078;
+    border: 2px solid #F8D030;
+}
+.psychic{
+    background-color: #FA92B2;
+    border: 2px solid #F85888;
+}
+.ice{
+    background-color: #BCE6E6;
+    border: 2px solid #98D8D8;
+}
+.dragon{
+    background-color: #A27DFA;
+    border: 2px solid #7038F8;
+}
+.dark{
+    background-color: #A29288;
+    border: 2px solid #705848;
+}
+.fairy{
+    background-color: #F4BDC9;
+    border: 2px solid #EE99AC;
+}
+
+#logo{
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    margin-left: 1.5em;
+    height: 30px;
+}
+#banner{
+    background-color: #282828;
+}
+.button{
+    position: absolute;
+    background-color: rgb(124, 179, 140);
+    color: white;
+    font-weight: 600;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    top: 0.5em;
+    right: 2em;
+    transition: background-color 0.2s ease
+}
+button{
+    background-color: rgb(124, 179, 140);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease
+}
+#add-team{
+    float: right;
+}
+.button:hover, button:hover{
+    background-color: rgb(142, 193, 161);
+}
+#content-flex{
+    display: flex;
+    padding: 1em;
+}
+.flex-spacer{
+    flex: 1 0 0;
+}
+#teams-holder{
+    flex: 1 0 0;
+}
+#paste-box{
+    margin-top: 1em;
+}
+#link-box{
+    margin-top: 1em;
+}
+label{
+    display: block;
+}
+textarea {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 300px;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+}
+#new-team{
+    background-color: rgb(124, 179, 140);
+    color: white;
+    font-size: 1.5em;
+    padding: 0.2em;
+    width: 37.6px;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.2s ease
+}
+#new-team:hover{
+    background-color: rgb(142, 193, 161);
+    cursor: pointer;
+}
+#update-interface{
+    display: none;
+    flex: 1 0 0;
+}
+.team{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: calc(50% - 130px);
+    border: solid 2px transparent;
+    border-radius: 1em;
+    background-color: white;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+.team:hover{
+    background-color: #f1f1f1;
+}
+.active-team{
+    border: solid 2px rgb(39, 93, 197);
+}
+.team-name{
+    display: block;
+}
+.x-sprite {
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+.x-sprite:hover {
+    background-color: #ddd;
+}

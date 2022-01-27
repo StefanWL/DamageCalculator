@@ -1,0 +1,2 @@
+teamArray = []
+teamText = ''

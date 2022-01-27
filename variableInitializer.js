@@ -1,0 +1,5 @@
+var userSets = []
+var enemySets = [undefined,undefined,undefined,undefined,undefined,undefined]
+var userPokemon = []
+var enemyPokemon = [undefined,undefined,undefined,undefined,undefined,undefined]
+var damageRollGrid = [[],[],[],[],[],[]]
