@@ -1,5 +1,5 @@
 # DamageCalculator
-Live Site is available at: pokemondamagecalculator.rf.gd
+Live Site is available at: http://pokemondamagecalculator.rf.gd
 
 Damage calculator that's written primarily in vanilla JavaScript.
 Users are able to enter and save their own teams through text or by URL.
