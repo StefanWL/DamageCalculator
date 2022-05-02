@@ -10,7 +10,7 @@ Damage is calculated by calculating the final stats the user's inputted teams an
 Output is appended directly to the DOM as HTML nodes.
 
 # Sample team links
-Click 'Add Team' paste into pokepaste box
+Click '+' and paste into pokepaste box then click 'Add Team'
 
 https://pokepast.es/c4449d5be6596692
 <br />
@@ -20,7 +20,7 @@ https://pokepast.es/edfd32d195108551
 
 
 # Sample team text
-Click 'Add Team' paste into text box
+Click '+' and paste into text box then click 'Add Team'
 
 Tapu Koko @ Heavy-Duty Boots  
 Ability: Electric Surge  
