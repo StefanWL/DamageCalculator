@@ -10,7 +10,7 @@ Damage is calculated by calculating the final stats the user's inputted teams an
 Output is appended directly to the DOM as HTML nodes.
 
 # Sample team links
-Click 'Add Team' paste into url box
+Click 'Add Team' paste into pokepaste box
 
 https://pokepast.es/c4449d5be6596692
 <br />
