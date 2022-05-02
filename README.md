@@ -1,5 +1,5 @@
 # DamageCalculator
-Live Site is available at: 
+Live Site is available at: pokemondamagecalculator.rf.gd
 
 Damage calculator that's written primarily in vanilla JavaScript.
 Users are able to enter and save their own teams through text or by URL.
@@ -10,6 +10,8 @@ Damage is calculated by calculating the final stats the user's inputted teams an
 Output is appended directly to the DOM as HTML nodes.
 
 # Sample team links
+Click 'Add Team' paste into url box
+
 https://pokepast.es/c4449d5be6596692
 <br />
 https://pokepast.es/fd57472844702ab3
@@ -18,6 +20,8 @@ https://pokepast.es/edfd32d195108551
 
 
 # Sample team text
+Click 'Add Team' paste into text box
+
 Tapu Koko @ Heavy-Duty Boots  
 Ability: Electric Surge  
 EVs: 252 SpA / 4 SpD / 252 Spe  
