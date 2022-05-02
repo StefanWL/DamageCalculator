@@ -11,7 +11,9 @@ Output is appended directly to the DOM as HTML nodes.
 
 # Sample team links
 https://pokepast.es/c4449d5be6596692
+<br />
 https://pokepast.es/fd57472844702ab3
+<br />
 https://pokepast.es/edfd32d195108551
 
 
